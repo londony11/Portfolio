@@ -1,86 +1,6 @@
-{% extends 'bootstrap/base.html' %}
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-
-{% block html_attribs %}
-lang="en"
-{% endblock %}
-
-<!--<head>-->
-  {% block head %}
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Bence Konnyu - Personal Website</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="static/assets/img/favicon.png" rel="icon">
-  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  {% block styles %}
-  <!-- Vendor CSS Files -->
-  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="static/assets/css/style.css" rel="stylesheet">
-  {% endblock %}
-
-  {% endblock %}
-
-
-<!--</head>-->
-
-<!--<body>-->
+{% include 'header.html' %}
 
 {% block content %}
-
-  <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-<!--            <li class="active"><a href="{{ url_for('home') }}">Home</a></li>-->
-            <li class="active"><a href=" {{ url_for('home') }} ">About Me</a></li>
-            <li><a href=" {{ url_for('home') }} ">Projects</a></li>
-            <li><a href=" {{ url_for('home') }} ">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 d-none d-md-block  mr-auto">
-          <div class="tweet d-flex">
-<!--            <span class="bi bi-twitter text-white mt-2 mr-3"></span>-->
-<!--            <div>-->
-<!--              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>-->
-<!--            </div>-->
-          </div>
-        </div>
-        <div class="col-md-4 d-none d-md-block">
-<!--          <h3>Hire Me</h3>-->
-<!--          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>-->
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <nav class="navbar navbar-light custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="{{ url_for('home') }}">Bence Konnyu.</a>
-      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-        <span></span>
-      </a>
-    </div>
-  </nav>
-
   <main id="main">
 
     <!-- ======= Works Section ======= -->
@@ -223,15 +143,15 @@ lang="en"
     </section><!-- End Services Section -->
 
 
-        <!-- ======= Clients Section ======= -->
-    <section class="section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-5">
-            <h3 class="h3 heading">My Clients</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
-          </div>
-        </div>
+<!--        &lt;!&ndash; ======= Clients Section ======= &ndash;&gt;-->
+<!--    <section class="section">-->
+<!--      <div class="container">-->
+<!--        <div class="row justify-content-center text-center mb-4">-->
+<!--          <div class="col-5">-->
+<!--            <h3 class="h3 heading">My Clients</h3>-->
+<!--            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>-->
+<!--          </div>-->
+<!--        </div>-->
 <!--        <div class="row">-->
 <!--          <div class="col-4 col-sm-4 col-md-2">-->
 <!--            <a href="#" class="client-logo"><img src="static/assets/img/logo-adobe.png" alt="Image" class="img-fluid"></a>-->
@@ -298,48 +218,6 @@ lang="en"
 <!--    </section>&lt;!&ndash; End Testimonials Section &ndash;&gt;-->
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright Bence Konnyu. All Rights Reserved</p>
-          <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-          -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-        <div class="col-sm-6 social text-md-end">
-<!--          <a href="#"><span class="bi bi-twitter"></span></a>-->
-<!--          <a href="#"><span class="bi bi-facebook"></span></a>-->
-          <a href="https://github.com/londony11" target="_blank"><span class="bi bi-github"></span></a>
-          <a href="https://www.linkedin.com/in/könnyű-bence-52b9b3107/" target="_blank"><span class="bi bi-linkedin"></span></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 {% endblock %}
 
-{% block scripts %}
-  <!-- Vendor JS Files -->
-  <script src="static/assets/vendor/aos/aos.js"></script>
-  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="static/assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="static/assets/js/main.js"></script>
-{% endblock %}
-<!--</body>-->
-
-<!--</html>-->
-
+{% include 'footer.html' %}
