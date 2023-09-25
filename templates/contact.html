@@ -9,9 +9,7 @@
         <div class="row mb-5 align-items-end">
           <div class="col-md-6" data-aos="fade-up">
             <h2>Contact</h2>
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
-              officiis explicabo inventore.
-            </p>
+            <p class="mb-0">{% print(message) %}</p>
           </div>
 
         </div>
@@ -19,7 +17,7 @@
         <div class="row">
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{{ url_for('contact') }}" method="POST">
 
               <div class="row gy-3">
                 <div class="col-md-6 form-group">
@@ -40,9 +38,9 @@
                 </div>
 
                 <div class="col-md-12 my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+<!--                  <div class="d-none" id="submitErrorMessage">Loading</div>-->
+<!--                  <div class="d-none" id="submitErrorMessage">Error sending message!</div>-->
+<!--                  <div class="d-none" id="submitSuccessMessage">Your message has been sent. Thank you!</div>-->
                 </div>
 
                 <div class="col-md-6 mt-0 form-group">
@@ -58,15 +56,19 @@
             <ul class="list-unstyled">
               <li class="mb-3">
                 <strong class="d-block mb-1">Address</strong>
-                <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
-              </li>
-              <li class="mb-3">
-                <strong class="d-block mb-1">Phone</strong>
-                <span>+1 232 3235 324</span>
+                <span>Budapest, Hungary</span>
               </li>
               <li class="mb-3">
                 <strong class="d-block mb-1">Email</strong>
-                <span>youremail@domain.com</span>
+                <span>bence.konnyu@outlook.com</span>
+              </li>
+               <li class="mb-3">
+                <strong class="d-block mb-1">Social Media</strong>
+                <a href="https://github.com/londony11" target="_blank"><span class="bi bi-github"></span></a>
+                 <a href="https://www.linkedin.com/in/könnyű-bence-52b9b3107/" target="_blank"><span class="bi bi-linkedin"></span></a>
+                 <a href="https://twitter.com/bence_konnyu" target="_blank"><span class="bi bi-twitter"></span></a>
+                 <a href="https://www.facebook.com/bence.konnyu/" target="_blank"><span class="bi bi-facebook"></span></a>
+                 <a href="https://www.instagram.com/bence.konnyu/" target="_blank"><span class="bi bi-instagram"></span></a>
               </li>
             </ul>
           </div>
