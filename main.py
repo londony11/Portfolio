@@ -10,7 +10,7 @@ MY_EMAIL = os.environ.get("MY_EMAIL")
 APP_PASSWORD = os.environ.get("APP_PASSWORD")
 
 app = Flask(__name__)
-app.secret_key = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"
+app.secret_key = os.environ.get("APP_SECRET_KEY")
 Bootstrap(app)
 
 
@@ -56,4 +56,4 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8080)
+    app.run(debug=False, port=8080)
