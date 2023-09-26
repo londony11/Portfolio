@@ -2,7 +2,7 @@ pip==23.2.1
 blinker==1.6.2
 click==8.1.7
 dominate==2.8.0
-Flask==2.3.3
+Flask==2.2.5
 Flask-Bootstrap==3.3.7.1
 itsdangerous==2.1.2
 Jinja2==3.1.2
