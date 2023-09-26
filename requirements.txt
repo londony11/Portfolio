@@ -1,3 +1,4 @@
+pip==23.2.1
 blinker==1.6.2
 click==8.1.7
 dominate==2.8.0
